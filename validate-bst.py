@@ -12,7 +12,9 @@ Approach:
 # For every right iteration, we update the lower bound to the current node's value.
 
 Time Complexity: O(N) as we traverse each node once.
-Space Complexity: O(H) where H is the height of the tree, due to recursion stack, but O(1) if we ignore the recursion stack space.
+Space Complexity: O(H) where H is the height of the tree, due to recursion stack, 
+                  O(1) if we ignore the recursion stack space
+                  O(N) if we consider the space used by the recursion stack in the worst case (skewed tree).
 '''
 
 # Initial Attempt 
